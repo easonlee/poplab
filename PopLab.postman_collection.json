@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "fd61f559-2cbc-46af-8a13-03bef5f5f060",
+		"name": "PopLab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "category 06",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}category/create",
+					"host": [
+						"{{base_url}}category"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category - Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "category 02-B",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}category/update",
+					"host": [
+						"{{base_url}}category"
+					],
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category - Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}category/detail",
+					"host": [
+						"{{base_url}}category"
+					],
+					"path": [
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category - Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}category/delete",
+					"host": [
+						"{{base_url}}category"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "product01",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "product01product01product01",
+							"type": "text"
+						},
+						{
+							"key": "total",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "multiple category, separate by ,",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}product/create",
+					"host": [
+						"{{base_url}}product"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "product 01aaa",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "product 01aaaproduct 01aaaproduct 01aaa",
+							"type": "text"
+						},
+						{
+							"key": "total",
+							"value": "234",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1,3",
+							"description": "multiple category, separate by ,",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}product/update",
+					"host": [
+						"{{base_url}}product"
+					],
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}product/detail",
+					"host": [
+						"{{base_url}}product"
+					],
+					"path": [
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product - Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}product/delete",
+					"host": [
+						"{{base_url}}product"
+					],
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000/api/"
+		}
+	]
+}
